@@ -6,6 +6,7 @@ zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
 # colorschme
 zplug "carloscuesta/materialshell", as:theme, use:materialshell
+zplug "chrissicool/zsh-256color"
 
 # history
 zplug "zsh-users/zsh-history-substring-search"
