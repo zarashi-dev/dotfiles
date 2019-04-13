@@ -55,6 +55,7 @@ append_path "/usr/local/sbin"
 export EDITOR="nvim"
 alias sudoedit="sudo -e"
 
+# Software specific variables
 ## Git
 export GIBO_BOILERPLATES="${XDG_DATA_HOME}/gibo"
 
@@ -63,6 +64,9 @@ export BASH_ENV="${XDG_CONFIG_HOME}/bash/env.bash"
 
 ## ZSH
 export ZDOTDIR="${XDG_CONFIG_HOME}/zsh"
+
+## docker
+export DOCKER_BUILDKIT=1
 
 # Language specific variables
 ## Java

@@ -15,3 +15,5 @@ fi
 alias g="git"
 alias gs="git status"
 alias gc="git commit"
+# docker
+alias dr="docker run -it --init --rm"
