@@ -15,5 +15,17 @@ fi
 alias g="git"
 alias gs="git status"
 alias gc="git commit"
+# pv
+alias pv="pv -pterabT"
+
+# iso
+function convert_iso {
+  os_is 'macos' && {
+    hdiutil convert -format UDRW -o ${1%.*}.dmg ${1}
+    mv ${1%.*}.dmg ${1%.*}.img
+  }
+
+}
+
 # docker
 alias dr="docker run -it --init --rm"
