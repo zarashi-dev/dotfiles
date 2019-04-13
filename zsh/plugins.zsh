@@ -1,6 +1,9 @@
 #!/usr/bin/env zsh
 # For Zplug
 
+# manage myself
+zplug "zplug/zplug", hook-build:"zplug --self-manage"
+
 # colorschme
 zplug "carloscuesta/materialshell", as:theme, use:materialshell
 
