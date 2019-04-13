@@ -5,6 +5,7 @@ Plug 'cohama/lexima.vim'
 Plug 'luochen1990/rainbow'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'tpope/vim-surround'
+Plug 'tomtom/tcomment_vim'
 call plug#end()
 
 " ruler
