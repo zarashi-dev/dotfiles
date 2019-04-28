@@ -5,14 +5,20 @@
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
 # colorschme
-zplug "carloscuesta/materialshell", as:theme, use:materialshell
 zplug "chrissicool/zsh-256color"
+zplug "carloscuesta/materialshell", as:theme, use:materialshell
 
 # history
-zplug "zsh-users/zsh-history-substring-search"
+zplug "zdharma/history-search-multi-word"
 
 # syntax
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
+
+# vi-mode
+zplug "b4b4r07/zsh-vimode-visual", defer:3
+
+# sudo
+zplug "hcgraf/zsh-sudo"
 
 # dd
 zplug "zarashi-dev/dd-bench", as:command
