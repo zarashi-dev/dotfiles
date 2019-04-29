@@ -19,13 +19,17 @@ module.exports = {
     // shell options
     shellArgs: ['--login'],
 
+    // bell
+    bell: 'SOUND',
+   // bellSoundURL: "file:////System/Library/Sounds/Funk.aiff" // TODO: make the bell sound work
+
     // hyperTab options
     hyperTabs: {
       trafficButtons: true, // preserve Mac traffic buttons
       border: true,
       tabIconsColored: true,
       activityColor: 'salmon',
-      closeAlign: 'right',
+      closeAlign: 'left',
     },
 
     // materialTheme options

@@ -11,6 +11,21 @@ if [[ -d "${ZPLUG_HOME}" ]]; then
   source "${ZPLUG_HOME}/init.zsh"
 fi
 
+# window title
+function __send_osc_window_title { 
+  echo -en "\033]2;${*}\007" # use P s = 2 to change windows title only; refer https://www.xfree86.org/current/ctlseqs.html
+}
+export WINDOW_TITLE_SUFFIX="$(hostname -s)"
+function __pwd_window_title {
+  __send_osc_window_title "$(shrink_path -f) [${WINDOW_TITLE_SUFFIX}]"
+}
+function __command_window_title {
+  __send_osc_window_title "${2%% *} [${WINDOW_TITLE_SUFFIX}]"
+}
+add-zsh-hook preexec __command_window_title
+add-zsh-hook precmd __pwd_window_title
+
+
 # history
 export HISTFILE="${XDG_CACHE_HOME}/zsh/histfile"
 export HISTSIZE=1001

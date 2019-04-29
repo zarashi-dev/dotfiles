@@ -4,23 +4,23 @@
 # manage myself
 zplug "zplug/zplug", hook-build:"zplug --self-manage"
 
-# colorschme
+# appearance
+## term-color
 zplug "chrissicool/zsh-256color"
+## theme
 zplug "carloscuesta/materialshell", as:theme, use:materialshell
+## syntax
+zplug "zdharma/fast-syntax-highlighting", defer:2
 
 # history
 zplug "zdharma/history-search-multi-word"
 
-# syntax
-zplug "zdharma/fast-syntax-highlighting", defer:2
-
-# vi-mode
+# keymap
 zplug "b4b4r07/zsh-vimode-visual", defer:3
-
-# sudo
 zplug "hcgraf/zsh-sudo"
 
-# dd
+# utils 
+zplug "plugins/shrink-path", from:oh-my-zsh
 zplug "zarashi-dev/dd-bench", as:command
 
 # Install plugins if there are plugins that have not been installed
